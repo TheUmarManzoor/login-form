@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login form</title>
+  </head>
+  <body>
+    <form action="login form" method="post">
+      <h1>sign in</h1>
+      <section>
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          autocomplete="username"
+          autofocus
+          required
+        />
+      </section>
+      <section>
+        <label for="password">Password</label>
+        <button
+          id="toggle-password"
+          type="button"
+          aria-label="show password in plain text warraning:this will display password on screen"
+        >
+          Show Password
+        </button>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          autocomplete="current-password"
+          minlength="8"
+          aria-describedby="password-constrains"
+          required
+        />
+        <div id="password-constrains">
+          Eight or more character one upper case one lower case digits and
+          special character
+        </div>
+      </section>
+      <button id="sign-in">Sign in</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
